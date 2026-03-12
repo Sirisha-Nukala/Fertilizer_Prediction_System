@@ -1,99 +1,133 @@
 # 🌱 Fertilizer Recommendation System
 
-A Machine Learning project that recommends the most suitable fertilizer
-based on soil characteristics, crop type, and environmental parameters.
+A Machine Learning web application that recommends the most suitable fertilizer based on soil nutrients and environmental conditions.
 
-The system uses a **Decision Tree Classifier** trained on a fertilizer
-recommendation dataset and saves the trained model for future
-predictions.
+The model is trained using a Decision Tree Classifier and deployed as an interactive web application using Streamlit.
 
-------------------------------------------------------------------------
+---
 
-## 📌 Project Overview
+## 🚀 Live Demo
 
-Farmers often struggle to choose the correct fertilizer for their
-crops.\
-This project aims to solve that problem using **Machine Learning**.
+🔗 **Try the app:**
+https://fertilizerrecommendationsystem-siri.streamlit.app/
 
-The model analyzes factors like:
+---
 
--   Soil Type
--   Crop Type
--   Temperature
--   Humidity
--   Moisture
--   Nitrogen
--   Potassium
--   Phosphorous
+## 📌 Features
 
-Based on these inputs, the system predicts the **best fertilizer** to
-use.
+* Predicts the best fertilizer based on soil nutrients
+* Interactive web interface built with Streamlit
+* Uses Machine Learning for accurate recommendations
+* Simple and user-friendly UI
+* Real-time fertilizer prediction
 
-------------------------------------------------------------------------
+---
 
-## 🛠️ Technologies Used
+## 🧠 Machine Learning Model
 
--   Python
--   Pandas
--   Scikit-learn
--   Pickle
--   Label Encoding
--   Decision Tree Algorithm
+The model was trained using:
 
-------------------------------------------------------------------------
+* **Algorithm:** Decision Tree Classifier
+* **Libraries:** scikit-learn, pandas
+* **Encoding:** LabelEncoder for categorical features
+
+### Input Features
+
+* Temperature
+* Moisture
+* Rainfall
+* Soil pH
+* Nitrogen
+* Phosphorous
+* Potassium
+* Carbon
+* Soil Type
+* Crop Type
+
+### Output
+
+* Recommended Fertilizer
+
+---
+
+## 🛠 Tech Stack
+
+* Python
+* Streamlit
+* Pandas
+* Scikit-learn
+* Pickle
+* Git & GitHub
+
+---
 
 ## 📂 Project Structure
 
-fertilizer-recommendation-system │ ├──
-fertilizer_recommendation_dataset.csv ├── train_model.py ├── model.pkl
-├── fertilizer_encoder.pkl └── README.md
+```
+Fertilizer_Recommendation_System
+│
+├── app.py
+├── train_model.py
+├── model.pkl
+├── fertilizer_encoder.pkl
+├── requirements.txt
+├── README.md
+```
 
-------------------------------------------------------------------------
+---
 
-## ⚙️ Model Training
+## ⚙️ Installation & Running Locally
 
-Run the training script:
+### Clone the repository
 
-``` bash
+```
+git clone https://github.com/Sirisha-Nukala/Fertilizer_Recommendation_System.git
+```
+
+### Navigate to project folder
+
+```
+cd Fertilizer_Recommendation_System
+```
+
+### Install dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Run the Streamlit app
+
+```
+streamlit run app.py
+```
+
+---
+
+## 📊 Model Training
+
+To retrain the model:
+
+```
 python train_model.py
 ```
 
-This script will:
+This will generate:
 
-1.  Load the dataset\
-2.  Encode categorical features\
-3.  Train the Decision Tree model\
-4.  Save the trained model
+* `model.pkl`
+* `fertilizer_encoder.pkl`
 
-Saved files:
+---
 
--   `model.pkl`
--   `fertilizer_encoder.pkl`
+## 👩‍💻 Author
 
-------------------------------------------------------------------------
+**Sirisha Nukala**
 
-## 🧠 Machine Learning Workflow
+GitHub:
+https://github.com/Sirisha-Nukala
 
-1.  Data Collection\
-2.  Data Preprocessing\
-3.  Feature Encoding\
-4.  Model Training\
-5.  Model Serialization using Pickle\
-6.  Prediction
+---
 
-------------------------------------------------------------------------
+## ⭐ Support
 
-## 🚀 Future Improvements
-
--   Build a **Flask / Streamlit web application**
--   Add real-time fertilizer prediction
--   Improve model accuracy with advanced algorithms
--   Deploy the model to the cloud
-
-------------------------------------------------------------------------
-
-## 👨‍💻 Author
-
-**Kumar Karri**
-
-If you found this project helpful, feel free to ⭐ the repository.
+If you found this project useful, consider giving it a ⭐ on GitHub.
